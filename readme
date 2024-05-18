@@ -1,0 +1,80 @@
+Claro! Aqui está um exemplo de README para o seu projeto, incluindo instruções passo a passo sobre como instalar o Docker e rodar o projeto usando o Docker.
+
+````markdown
+# Cloud-in-Control-Equipe-BugHunters
+
+## Descrição
+
+Este projeto é um exemplo de uma aplicação PHP que utiliza o Firebase como backend. O projeto inclui uma tela de catálogo simples desenvolvida em HTML5 e CSS3.
+
+## Pré-requisitos
+
+- Docker
+- Docker Compose (opcional, se você quiser usar Docker Compose para gerenciamento de contêineres)
+
+## Instalação do Docker
+
+## Passos para rodar o projeto
+
+### 1. Clone o repositório do projeto
+
+```bash
+git clone https://github.com/SeuUsuario/growup-2024-1-Cloud-in-Control-Equipe-BugHunters.git
+cd growup-2024-1-Cloud-in-Control-Equipe-BugHunters
+```
+````
+
+### 2. Construa a imagem Docker
+
+```bash
+docker build -t cloud-in-control-atv .
+```
+
+### 3. Execute o contêiner Docker
+
+```bash
+docker run -d -p 8080:80 --name my-arquivo-php cloud-in-control-atv
+```
+
+### 4. Acesse a aplicação
+
+Abra o navegador e acesse `http://localhost:8080` para ver a aplicação em execução.
+
+## Estrutura do Projeto
+
+```
+📁growup-2024-1-Cloud-in-Control-Equipe-BugHunters
+├── composer.json
+├── composer.lock
+├── conect.php
+├── 📁css
+│   ├── responsive.css
+│   └── style.css
+├── Dockerfile
+├── firebase.php
+├── 📁images
+│   └── (imagens do projeto)
+├── index.php
+└── 📁vendor
+    └── (arquivos gerados pelo Composer)
+```
+
+## Troubleshooting
+
+- **Erro durante a instalação do Composer:** Certifique-se de que o arquivo `composer.json` está corretamente configurado.
+- **Porta 8080 já em uso:** Você pode mudar a porta mapeada no comando `docker run` para outra porta disponível no seu sistema. Exemplo:
+  ```bash
+  docker run -d -p 8081:80 --name my-running-app cloud-in-control-atv
+  ```
+
+## Contribuidores
+
+- Antonio Thiago Neto
+-
+- Nome do Integrante 3
+- Nome do Integrante 4
+
+```
+
+Certifique-se de substituir `SeuUsuario` pelo nome de usuário do GitHub ou o link correto do repositório, bem como os nomes dos integrantes no final do README. Este README fornece uma visão geral clara do projeto, instruções de instalação do Docker, passos para construir e executar o projeto, e uma estrutura de diretórios para facilitar a navegação.
+```
